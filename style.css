@@ -71,7 +71,7 @@ main{
   background-color: #FF9A4B;
   color: #EEEEEE;
 }
-/*　↑step-numは全て同じレイアウトのため番号で分けなくてよい*/
+/*　↑step-numberは全て同じレイアウトのため番号で分けなくてよい(step-numで統一)*/
 
 .title{
   margin: 15px 0 5px;
@@ -83,10 +83,44 @@ footer{
   background-color: #AAAAAA;
 }
 
-@media screen and (max-width:425px){
+@media screen and (max-width:768px){
   header{
     width: 100%;
+    height: 50px;
   }
 
-  
+  main{
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+  }
+
+  .step-box{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 20px;
+  }
+
+  .step-image1{
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .step-image2{
+    background-position: bottom;
+    background-size: cover;
+  }
+
+  .step-image3{
+    background-position: bottom;
+    background-size: cover;
+  }
+
+
+
+  footer{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+  }
 }
